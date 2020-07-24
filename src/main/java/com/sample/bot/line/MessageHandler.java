@@ -63,12 +63,14 @@ public class MessageHandler {
 	 * 画像
 	 * @param event
 	 * @return
+	 * @throws Exception
 	 */
 	@EventMapping
-	public void handleImageMessage(MessageEvent<ImageMessageContent> event) throws IOException, ExecutionException, InterruptedException {
+	public void handleImageMessageEvent(MessageEvent<ImageMessageContent> event) throws Exception {
+
 		String messageId = event.getMessage().getId();
 		InputStream is = lineMessagingClient.getMessageContent(messageId).get().getStream();
-		String result = rekognitionService.analyze(is);
+		String result = rekognitionService.detect(is);
 
 		lineMessagingClient.replyMessage(
 				new ReplyMessage(
