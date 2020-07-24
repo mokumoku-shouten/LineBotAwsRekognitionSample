@@ -1,0 +1,8 @@
+line:
+  bot:
+    channelSecret: ${CHANNEL_SECRET}
+    channelToken: ${CHANNEL_ACCESS_TOKEN}
+
+aws:
+  accessKey: ${AWS_ACCESS_KEY}
+  secretKey: ${AWS_SECRET_KEY}
