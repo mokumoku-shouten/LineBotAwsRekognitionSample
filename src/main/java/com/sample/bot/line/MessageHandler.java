@@ -14,10 +14,8 @@ import com.linecorp.bot.model.event.Event;
 import com.linecorp.bot.spring.boot.annotation.EventMapping;
 import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
-import java.util.concurrent.ExecutionException;
 
 /**
  * LINEメッセージハンドラ
