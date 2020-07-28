@@ -1,5 +1,5 @@
 # LineBotAwsRekognitionSample
-LINEから画像を送信し、AWS Rekognitionの物体検出結果を返すプログラムです。
+LINEから画像を送信すると、AWS Rekognitionの物体検出結果が返ってくるプログラムです。
 
 # Description
 ![Screenshot](line-bot-aws-rekognition.png)
